@@ -24,7 +24,6 @@ app.use(cookieParser());
 
 var corsOptions = {
     origin: ['http://localhost:3000', 'https://morning-reaches-00852.herokuapp.com'],
-    credentials: true,
 };
 
 app.use(cors(corsOptions));
