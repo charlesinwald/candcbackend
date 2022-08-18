@@ -7,8 +7,6 @@ var session = require('express-session');
 const cors = require('cors');
 var parser = require('body-parser');
 
-
-
 var SQLiteStore = require('connect-sqlite3')(session);
 
 var indexRouter = require('./routes/index');
@@ -39,7 +37,7 @@ app.use(session({
     saveUninitialized: false,
     store: new SQLiteStore({ db: 'sessions.db', dir: './var/db' })
   }));
-  app.use(passport.authenticate('session'));
+app.use(passport.authenticate('session'));
 
 app.use('/', indexRouter);
 app.use('/auth', authRouter);
