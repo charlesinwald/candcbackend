@@ -8,7 +8,7 @@
     - _(Note) If on Windows, rename (Windows)package.json to package.json for compatability, before running npm install._
 2. `cd client` to enter the frontend directory, and run `npm install` to install the frontend dependencies
 3. `cd ..` to return to the root directory of the project
-4. `npm run dev` to start the project.  This should run both the frontend and backend concurrently, and open the browser to localhost:3000 to start using DevWorthy
+4. `npm run dev` to start the project.  This should run both the frontend and backend concurrently, and open the browser to localhost:3000 to start browsing
 
 #### **Architecture**
 
