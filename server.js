@@ -8,7 +8,13 @@ var dotenv = require('dotenv');
 dotenv.config();
 var cloudinary = require('cloudinary');
 var cors = require('cors')
-app.use(cors())
+var corsOptions = {
+  origin: [
+    "http://localhost:3000",
+    "http://localhost:3001",
+  ],
+};
+app.use(cors(corsOptions));
 
 
 // Connect Database
